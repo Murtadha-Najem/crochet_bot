@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+
+# Runtime data: user sessions and uploaded images
+data/
+output/

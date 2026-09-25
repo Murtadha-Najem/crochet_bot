@@ -1,12 +1,13 @@
 """
 Bot Configuration - Settings and constants
 
-IMPORTANT: Set your bot token here before running!
+IMPORTANT: Set the BOT_TOKEN environment variable before running!
 """
 
-# Telegram Bot Token (get from @BotFather)
-# TODO: Replace with your actual bot token
-BOT_TOKEN = "***REMOVED***"
+import os
+
+# Telegram Bot Token (get from @BotFather), read from the environment so it never lands in git
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 
 # File paths
 DATA_DIR = "data"

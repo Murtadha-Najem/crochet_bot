@@ -56,10 +56,10 @@ pip install -r requirements.txt
 
 ### 3. Configuration
 
-Edit `config.py` and set your bot token:
-
-```python
-BOT_TOKEN = "YOUR_ACTUAL_BOT_TOKEN_HERE"  # Get from @BotFather
+Set your bot token as an environment variable:
+```bash
+export BOT_TOKEN="your-token-from-BotFather"        # Linux / macOS
+$env:BOT_TOKEN = "your-token-from-BotFather"        # Windows PowerShell
 ```
 
 ### 4. Run the Bot
@@ -209,7 +209,7 @@ pip install python-telegram-bot==20.7
 ```
 
 ### "BOT_TOKEN not set"
-Edit `config.py` and add your token from @BotFather
+Set the `BOT_TOKEN` environment variable to your token from @BotFather
 
 ### Database errors
 Delete `data/sessions.db` - it will be recreated
